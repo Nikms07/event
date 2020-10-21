@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    background-color: paleturquoise;
+    font-family: cursive;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+.footer {
+    text-align: center;
+    background-color: paleturquoise;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+.footer:hover {
+    background-color: wheat;
+}
+  
+h1 {
+    text-align: center;
+    background-color: paleturquoise;
+    font-family: cursive;
+}
+
+h3 {
+    text-align: center;
+}
+
+p, form, ul{
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.table {
+    table-layout: auto;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table1 {
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+img {
+    width: 33.33%;
+    float: left;
+    height: 100px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+      width: 100%;
+      height: auto;
+      padding-bottom: 5px;
+    }
+}
+
+#sub-but {
+    margin-top: 10px;
+    background-color: palegoldenrod;
+    width: 150%;
+    height: 150%;
+    font-weight: bolder;
+}
+
+#sub-but:hover {
+    background-color: paleturquoise;
+}
+
+.thead {
+    background-color: palegoldenrod;
+    table-layout: auto;
+    height: 50px;
+}
+
+.tbody {
+    background-color: papayawhip ;
+}
+
+.announ {
+    color: crimson;
+}
+
+.textOverImage{
+    width:200px;
+    height:200px;
+    display:inline-block;
+    background-size:cover;
+    border-radius:4px;
+    margin:4px;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+  }
+  
+  .textOverImage > input{
+    display:none;
+  }
+  
+  .textOverImage > div,.textOverImage > h2{
+    position:absolute;
+    background-color:rgba(255,255,255,0.8);
+    bottom:20px;
+    left:4px;
+    right:4px;
+    border-radius:4px;
+    padding:8px;
+    overflow:hidden;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+    bottom:4px;
+    opacity:1;
+  }
+  
+  .textOverImage > input:checked + h2{
+    bottom:-20px;
+    opacity:0;
+  }
+  
+  .textOverImage > h2{
+    margin:0;
+  }
+
